@@ -1,6 +1,6 @@
 # HybridKit for iOS
 
-**iOS version of HybridKit, a pseudo Web <-> iOS/Android bridge.**
+**iOS version of HybridKit, a pseudo Web -> iOS/Android bridge.**
 
 ![Screenshot](http://i.imgur.com/K86x7V1l.png)
 
@@ -52,7 +52,7 @@ By default, HybridKit includes the following commands:
 - `set_background_color`
 - `deceleration_rate`
 - `trigger_event`
-- `javascript
+- `javascript`
 
 For more information about the built-in handlers, check the [HybridKit-JS Wiki](https://github.com/usepropeller/HybridKit-iOS/wiki).
 
@@ -95,10 +95,12 @@ HybridKit.runCommand("hide_navbar", {hidden: true});
 ## Contact
 
 [Mert Dümenci](http://dumenci.me/)
-[@mertdumenci](https://twitter.com/mertdumenci)
+- [mert@dumenci.me](mailto:mert@dumenci.me)
+- [@mertdumenci](https://twitter.com/mertdumenci)
 
 [Clay Allsopp](http://clayallsopp.com/)
-[@clayallsopp](https://twitter.com/clayallsopp)
+- [clay@usepropeller.com](mailto:clay@usepropeller.com)
+- [@clayallsopp](https://twitter.com/clayallsopp)
 
 ## License
 
