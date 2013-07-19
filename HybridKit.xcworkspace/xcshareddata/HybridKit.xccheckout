@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>920F8C66-9D25-4116-BE67-65DC71245C7A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HybridKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4BA987AB-AE90-418A-AF83-6FEE1B5544AE</key>
+		<string>https://github.com/usepropeller/HybridKit-iOS.git</string>
+		<key>907A9E87-F3C0-44B3-A04D-E70E37E3969D</key>
+		<string>https://github.com/usepropeller/HybridKit-JS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HybridKit.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4BA987AB-AE90-418A-AF83-6FEE1B5544AE</key>
+		<string>..</string>
+		<key>907A9E87-F3C0-44B3-A04D-E70E37E3969D</key>
+		<string>../HybridKit/HybridKit-JS</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/usepropeller/HybridKit-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4BA987AB-AE90-418A-AF83-6FEE1B5544AE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4BA987AB-AE90-418A-AF83-6FEE1B5544AE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HybridKit-iOS</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>907A9E87-F3C0-44B3-A04D-E70E37E3969D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HybridKit-JS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
