@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		413ADDA81799A6B500774838 /* hybridkit.js in Sources */ = {isa = PBXBuildFile; fileRef = 413ADDA31799A6B500774838 /* hybridkit.js */; };
+		413ADDA91799A6B500774838 /* hybridkit.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 413ADDA41799A6B500774838 /* hybridkit.min.js */; };
+		413ADDAC1799A6B500774838 /* spec.js in Sources */ = {isa = PBXBuildFile; fileRef = 413ADDA71799A6B500774838 /* spec.js */; };
+		413ADDB01799B7ED00774838 /* normalize.css in Resources */ = {isa = PBXBuildFile; fileRef = 413ADDAD1799B7ED00774838 /* normalize.css */; };
+		413ADDB11799B7ED00774838 /* syntax.css in Resources */ = {isa = PBXBuildFile; fileRef = 413ADDAE1799B7ED00774838 /* syntax.css */; };
+		413ADDB21799B7ED00774838 /* test_html.html in Resources */ = {isa = PBXBuildFile; fileRef = 413ADDAF1799B7ED00774838 /* test_html.html */; };
+		413ADDB31799B8A900774838 /* hybridkit.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 413ADDA41799A6B500774838 /* hybridkit.min.js */; };
 		4152F5FF179854430069A0E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152F5FE179854430069A0E5 /* Foundation.framework */; };
 		4152F601179854430069A0E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152F600179854430069A0E5 /* CoreGraphics.framework */; };
 		4152F603179854430069A0E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152F602179854430069A0E5 /* UIKit.framework */; };
@@ -24,7 +31,6 @@
 		4152F64B179854910069A0E5 /* HYWebViewCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152F644179854910069A0E5 /* HYWebViewCommand.m */; };
 		4152F64C179854910069A0E5 /* HYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152F647179854910069A0E5 /* HYWebViewController.m */; };
 		4152F64D179854910069A0E5 /* NSString+HybridKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152F649179854910069A0E5 /* NSString+HybridKit.m */; };
-		4152F65C17985F980069A0E5 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 4152F65B17985F980069A0E5 /* test.html */; };
 		4152F66C17988B100069A0E5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152F61D179854430069A0E5 /* XCTest.framework */; };
 		D8FB7670B728473CA4FE6053 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2DF7529C5B41F7A429BD3B /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -41,6 +47,14 @@
 
 /* Begin PBXFileReference section */
 		3D2DF7529C5B41F7A429BD3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		413ADDA31799A6B500774838 /* hybridkit.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hybridkit.js; sourceTree = "<group>"; };
+		413ADDA41799A6B500774838 /* hybridkit.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hybridkit.min.js; sourceTree = "<group>"; };
+		413ADDA51799A6B500774838 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		413ADDA61799A6B500774838 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		413ADDA71799A6B500774838 /* spec.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = spec.js; sourceTree = "<group>"; };
+		413ADDAD1799B7ED00774838 /* normalize.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = normalize.css; path = "Test HTML/normalize.css"; sourceTree = "<group>"; };
+		413ADDAE1799B7ED00774838 /* syntax.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = syntax.css; path = "Test HTML/syntax.css"; sourceTree = "<group>"; };
+		413ADDAF1799B7ED00774838 /* test_html.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test_html.html; path = "Test HTML/test_html.html"; sourceTree = "<group>"; };
 		4152F5FB179854430069A0E5 /* HybridKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4152F5FE179854430069A0E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4152F600179854430069A0E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,7 +83,6 @@
 		4152F647179854910069A0E5 /* HYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYWebViewController.m; path = HybridKit/HYWebViewController.m; sourceTree = "<group>"; };
 		4152F648179854910069A0E5 /* NSString+HybridKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HybridKit.h"; path = "HybridKit/NSString+HybridKit.h"; sourceTree = "<group>"; };
 		4152F649179854910069A0E5 /* NSString+HybridKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HybridKit.m"; path = "HybridKit/NSString+HybridKit.m"; sourceTree = "<group>"; };
-		4152F65B17985F980069A0E5 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		4152F65D179874BB0069A0E5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9193048A40194FDA8736936D /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -99,6 +112,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		413ADDA11799A69500774838 /* Test HTML */ = {
+			isa = PBXGroup;
+			children = (
+				413ADDAD1799B7ED00774838 /* normalize.css */,
+				413ADDAE1799B7ED00774838 /* syntax.css */,
+				413ADDAF1799B7ED00774838 /* test_html.html */,
+				413ADDA21799A6B500774838 /* HybridKit-JS */,
+			);
+			name = "Test HTML";
+			sourceTree = "<group>";
+		};
+		413ADDA21799A6B500774838 /* HybridKit-JS */ = {
+			isa = PBXGroup;
+			children = (
+				413ADDA31799A6B500774838 /* hybridkit.js */,
+				413ADDA41799A6B500774838 /* hybridkit.min.js */,
+				413ADDA51799A6B500774838 /* LICENSE */,
+				413ADDA61799A6B500774838 /* README.md */,
+				413ADDA71799A6B500774838 /* spec.js */,
+			);
+			path = "HybridKit-JS";
+			sourceTree = "<group>";
+		};
 		4152F5F2179854420069A0E5 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +178,7 @@
 				4152F614179854430069A0E5 /* HYViewController.m */,
 				4152F616179854430069A0E5 /* Images.xcassets */,
 				4152F6401798546F0069A0E5 /* HybridKit */,
+				413ADDA11799A69500774838 /* Test HTML */,
 				4152F605179854430069A0E5 /* Supporting Files */,
 			);
 			path = HybridKit;
@@ -150,7 +187,6 @@
 		4152F605179854430069A0E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4152F65B17985F980069A0E5 /* test.html */,
 				4152F606179854430069A0E5 /* HybridKit-Info.plist */,
 				4152F607179854430069A0E5 /* InfoPlist.strings */,
 				4152F60A179854430069A0E5 /* main.m */,
@@ -280,9 +316,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4152F65C17985F980069A0E5 /* test.html in Resources */,
+				413ADDB31799B8A900774838 /* hybridkit.min.js in Resources */,
+				413ADDB11799B7ED00774838 /* syntax.css in Resources */,
 				4152F617179854430069A0E5 /* Images.xcassets in Resources */,
 				4152F609179854430069A0E5 /* InfoPlist.strings in Resources */,
+				413ADDB01799B7ED00774838 /* normalize.css in Resources */,
+				413ADDB21799B7ED00774838 /* test_html.html in Resources */,
 				4152F612179854430069A0E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,11 +374,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413ADDA91799A6B500774838 /* hybridkit.min.js in Sources */,
 				4152F615179854430069A0E5 /* HYViewController.m in Sources */,
+				413ADDA81799A6B500774838 /* hybridkit.js in Sources */,
 				4152F64D179854910069A0E5 /* NSString+HybridKit.m in Sources */,
 				4152F64B179854910069A0E5 /* HYWebViewCommand.m in Sources */,
 				4152F60B179854430069A0E5 /* main.m in Sources */,
 				4152F64A179854910069A0E5 /* HYDefaultCommandHandlerPack.m in Sources */,
+				413ADDAC1799A6B500774838 /* spec.js in Sources */,
 				4152F64C179854910069A0E5 /* HYWebViewController.m in Sources */,
 				4152F60F179854430069A0E5 /* HYAppDelegate.m in Sources */,
 			);

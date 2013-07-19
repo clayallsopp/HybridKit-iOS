@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>HybridKit Tests</title>
+    <script type='text/javascript' src='hybridkit.min.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel='stylesheet' type='text/css' href='normalize.css' media='screen'>
+    <link rel='stylesheet' type='text/css' href='syntax.css' media='screen'>
+
+    <style media='screen' type='text/css'>
+        body {
+            font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            height: auto;
+            margin-top: 40pt;
+            width: 100%;
+        }
+
+        .header h1 {
+            font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 28pt;
+            color: #0761f8;
+        }
+
+        .header h2 {
+            margin-top: -28px;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 300;
+            font-size: 18pt;
+            color: black;
+        }
+
+        .info {
+            text-align: center;
+            height: auto;
+            margin-top: 20pt;
+            margin-bottom: 20pt;
+            width: 100%;
+            background-color: #7c9dda;
+            color: white;
+            font-size: 12pt;
+
+            padding: 10pt;
+
+            box-sizing: border-box;
+            ms-box-sizing: border-box;
+            webkit-box-sizing: border-box;
+            moz-box-sizing: border-box;
+        }
+
+        .info span {
+            color: #c6cad6;
+        }
+
+        .code {
+            background-color: #f4f3f5;
+
+            vertical-align: middle;
+            text-align: left;
+
+            margin-top: 5pt;
+            padding: 10pt;
+
+            box-sizing: border-box;
+            ms-box-sizing: border-box;
+            webkit-box-sizing: border-box;
+            moz-box-sizing: border-box;
+
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class='header'>
+        <h1>HybridKit</h1>
+        <h2>Demo</h2>
+    </div>
+
+    <div class='info'>
+        HybridKit is a pseudo <span>web -> iOS / Android</span> bridge bundle.<br><br>
+        It consists <span>a JavaScript, an Objective-C and an Android</span> module.
+    </div>
+
+
+    <a href='javascript:HybridKit.runCommand("alert", {title: "Title", message:"Message", cancel_button_title:"Cancel"})'><div class='code'>
+        <div class="highlight"><pre><span class="nx">HybridKit</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">(</span><span class="s2">&quot;alert&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Title&quot;</span><span class="p">,</span> <span class="nx">message</span><span class="o">:</span><span class="s2">&quot;Message&quot;</span><span class="p">,</span> <span class="nx">cancel_button_title</span><span class="o">:</span><span class="s2">&quot;Cancel&quot;</span><span class="p">})</span>
+</pre></div>
+
+    </div></a>
+
+    <a href='javascript:HybridKit.runCommand("open_url", {url: "http://www.usepropeller.com"})'><div class='code'>
+        <div class="highlight"><pre><span class="nx">HybridKit</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">(</span><span class="s2">&quot;open_url&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">url</span><span class="o">:</span> <span class="s2">&quot;http://www.usepropeller.com&quot;</span><span class="p">})</span>
+</pre></div>
+
+    </div></a>
+
+    <a href='javascript:HybridKit.runCommand("set_title", {title: "Hello, HybridKit!"})'><div class='code'>
+        <div class="highlight"><pre><span class="nx">HybridKit</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">(</span><span class="s2">&quot;set_title&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Hello, HybridKit!&quot;</span><span class="p">})</span>
+</pre></div>
+
+    </div></a>
+
+    <a href='javascript:HybridKit.runCommand("set_scroll_enabled"), {enabled: "false"})'><div class='code'>
+        <div class="highlight"><pre><span class="nx">HybridKit</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">(</span><span class="s2">&quot;set_scroll_enabled&quot;</span><span class="p">),</span> <span class="p">{</span><span class="nx">enabled</span><span class="o">:</span> <span class="s2">&quot;false&quot;</span><span class="p">})</span>
+</pre></div>
+
+    </div></a>
+
+    <a href='javascript:HybridKit.runCommand("set_scroll_enabled"), {enabled: "true"})'><div class='code'>
+        <div class="highlight"><pre><span class="nx">HybridKit</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">(</span><span class="s2">&quot;set_scroll_enabled&quot;</span><span class="p">),</span> <span class="p">{</span><span class="nx">enabled</span><span class="o">:</span> <span class="s2">&quot;true&quot;</span><span class="p">})</span>
+</pre></div>
+
+    </div></a>
+
+    <a href='javascript:HybridKit.runCommand("set_background_color", {color: "red"})'><div class='code'>
+        <div class="highlight"><pre><span class="nx">HybridKit</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">(</span><span class="s2">&quot;set_background_color&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">color</span><span class="o">:</span> <span class="s2">&quot;red&quot;</span><span class="p">})</span>
+</pre></div>
+
+    </div></a>
+
+    <a href='javascript:HybridKit.runCommand("set_background_color", {color: "#887766"})'><div class='code'>
+        <div class="highlight"><pre><span class="nx">HybridKit</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">(</span><span class="s2">&quot;set_background_color&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">color</span><span class="o">:</span> <span class="s2">&quot;#887766&quot;</span><span class="p">})</span>
+</pre></div>
+
+    </div></a>
+
+    <a href='javascript:HybridKit.runCommand("deceleration_rate", {rate: "fast"})'><div class='code'>
+        <div class="highlight"><pre><span class="nx">HybridKit</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">(</span><span class="s2">&quot;deceleration_rate&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">rate</span><span class="o">:</span> <span class="s2">&quot;fast&quot;</span><span class="p">})</span>
+</pre></div>
+
+    </div></a>
+
+    <a href='javascript:HybridKit.runCommand("javascript", {javascript: "alert('Hey!')"})'><div class='code'>
+        <div class="highlight"><pre><span class="nx">HybridKit</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">(</span><span class="s2">&quot;javascript&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">javascript</span><span class="o">:</span> <span class="s2">&quot;alert(&#39;Hey!&#39;)&quot;</span><span class="p">})</span>
+</pre></div>
+
+    </div></a>
+
+<script>
+    HybridKit.runCommand("set_background_color", {color: "f8f8f8"});
+</script>
+</body>
+</html>
