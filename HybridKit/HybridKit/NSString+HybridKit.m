@@ -36,7 +36,7 @@
     
     NSString *strippedString = [using stringByReplacingOccurrencesOfString:@"#" withString:@""];
     
-    if (self.hy_isValidHex) {
+    if (self.hy_isValidHexColor) {
         return [HXColor colorWithHexString:using alpha:1.f];
     }
     
@@ -52,7 +52,7 @@
     }
 }
          
-- (BOOL)hy_isValidHex {
+- (BOOL)hy_isValidHexColor {
     NSString *using = self;
     
     if ('#' != [self characterAtIndex:0]) {
@@ -67,13 +67,7 @@
     
     for(int i = 0; i < using.length; ++i) {
         char current = [using UTF8String][i];
-        if (isxdigit(current)) {
-            NSLog(@"%c is valid", current);
-            continue;
-        }
-        
-        else {
-            NSLog(@"%c isn't valid", current);
+        if (!isxdigit(current)) {
             isValidHex = false;
             break;
         }

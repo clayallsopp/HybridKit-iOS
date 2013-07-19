@@ -16,6 +16,6 @@
 - (NSString *)hy_realUnescaped;
 
 - (UIColor *)hy_colorValue;
-- (BOOL)hy_isValidHex;
+- (BOOL)hy_isValidHexColor;
 
 @end
