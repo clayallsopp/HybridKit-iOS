@@ -43,6 +43,8 @@ webViewController.url = [NSURL URLWithString:@"http://google.com"];
 The built-in command handler can handle :
 `alert`, `open_url`, `set_url`, `set_url_refresh`, `set_title`, `set_scroll_enabled`, `set_background_color`, `deceleration_rate`, `trigger_event` and `javascript` commands.
 
+For more information about the built-in command handler, check the [HybridKit-JS Wiki](https://github.com/usepropeller/HybridKit-iOS/wiki).
+
 ## Creating a new command handler
 
 You can create new command handlers for custom commands invoked using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS) easily.
