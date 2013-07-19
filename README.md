@@ -6,11 +6,11 @@
 
 # What is it?
 
-HybridKit is an extensible, basic messaging system for your web view induced native apps.
+HybridKit is a simple, extensible messaging system for your web/native hybrid mobile apps.
 
-Using our [JavaScript library](http://github.com/usepropeller/HybridKit-JS), you can send commands from your web page for the native counterpart to catch it.
+Using our [JavaScript library](http://github.com/usepropeller/HybridKit-JS), you can send commands from your web page to the native app for processing.
 
-HybridKit uses **command handlers** for handling commands thrown at it using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS). You can create new command handlers to extend the built-in ones or to bring completely new features.
+HybridKit uses **command handlers** for handling commands sent using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS). HybridKit ships with [useful defaults](#builtin), or you can write completely new ones.
 
 # Setup
 
@@ -38,18 +38,29 @@ webViewController.url = [NSURL URLWithString:@"http://google.com"];
 [self presentViewController:webViewController animated:YES completion:nil];
 ```
 
-## Built-in command handler
+<a name="builtin" />
+## Built-in Commands
 
-The built-in command handler can handle :
-`alert`, `open_url`, `set_url`, `set_url_refresh`, `set_title`, `set_scroll_enabled`, `set_background_color`, `deceleration_rate`, `trigger_event` and `javascript` commands.
+By default, HybridKit includes the following commands:
 
-For more information about the built-in command handler, check the [HybridKit-JS Wiki](https://github.com/usepropeller/HybridKit-iOS/wiki).
+- `alert`
+- `open_url`
+- `set_url`
+- `set_url_refresh`
+- `set_title`
+- `set_scroll_enabled`
+- `set_background_color`
+- `deceleration_rate`
+- `trigger_event`
+- `javascript
 
-## Creating a new command handler
+For more information about the built-in handlers, check the [HybridKit-JS Wiki](https://github.com/usepropeller/HybridKit-iOS/wiki).
+
+## Custom Command Handlers
 
 You can create new command handlers for custom commands invoked using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS) easily.
 
-Subclass `HYWebViewCommand` and override `handleCommandString:dictionary` & `respondsToCommandString` methods.
+Simply create a `HYWebViewCommand` subclass and override the `handleCommandString:dictionary` & `respondsToCommandString` methods:
 
 ```Objective-C
 
@@ -58,9 +69,9 @@ Subclass `HYWebViewCommand` and override `handleCommandString:dictionary` & `res
 
 @implementation HideNavigationBarHandler
 -(void)handleCommandString:(NSString *)commandString dictionary:(NSDictionary *)commandDictionary {
-	if ([commandString isEqualToString:@"hide_navbar"]) {
-       self.webViewController.navigationController.navigationBarHidden = [commandDictionary[@"hidden"] boolValue];
-	}
+    if ([commandString isEqualToString:@"hide_navbar"]) {
+        self.webViewController.navigationController.navigationBarHidden = [commandDictionary[@"hidden"] boolValue];
+    }
 }
 
 - (BOOL)respondsToCommandString:(NSString *)commandString {
@@ -72,10 +83,10 @@ Subclass `HYWebViewCommand` and override `handleCommandString:dictionary` & `res
 Register the new command handler to a `HYWebViewController` instance.
 
 ```Objective-C
-[webViewController registerCommandHandler:[HideNavigationBarHandler new]];
+[hybridKitViewController registerCommandHandler:[HideNavigationBarHandler new]];
 ```
 
-Invoke it using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS).
+Invoke your new command using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS).
 
 ```JavaScript
 HybridKit.runCommand("hide_navbar", {hidden: true});
