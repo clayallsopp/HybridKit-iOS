@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.source_files = 'Classes', 'HybridKit/HybridKit/*.{h,m}'
   s.requires_arc = true
-  s.license = {:type => 'MIT', :file => 'LICENSE.md'}
+  s.license = {:type => 'MIT', :file => 'LICENSE'}
 
   s.dependency 'SVProgressHUD'
   s.dependency 'HexColors'
