@@ -1,1 +1,0 @@
-PODS_LIBFFI_OTHER_LDFLAGS = -Wl,-no_compact_unwind
