@@ -10,7 +10,7 @@ HybridKit is an extensible, basic messaging system for your web view induced nat
 
 Using our [JavaScript library](http://github.com/usepropeller/HybridKit-JS), you can send commands from your web page for the native counterpart to catch it.
 
-HybridKit uses `command handlers` for handling commands thrown at it using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS). You can create new command handlers to extend the built-in ones or to bring completely new features.
+HybridKit uses **command handlers** for handling commands thrown at it using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS). You can create new command handlers to extend the built-in ones or to bring completely new features.
 
 # Setup
 
@@ -47,35 +47,35 @@ The built-in command handler can handle :
 
 You can create new command handlers for custom commands invoked using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS) easily.
 
- Subclass `HYWebViewCommand` and override `handleCommandString:dictionary` & `respondsToCommandString` methods.
+Subclass `HYWebViewCommand` and override `handleCommandString:dictionary` & `respondsToCommandString` methods.
 
- ```Objective-C
+```Objective-C
 
- @interface HideNavigationBarHandler : HYWebViewCommand
- @end
+@interface HideNavigationBarHandler : HYWebViewCommand
+@end
 
- @implementation HideNavigationBarHandler
- -(void)handleCommandString:(NSString *)commandString dictionary:(NSDictionary *)commandDictionary {
- 	if ([commandString isEqualToString:@"hide_navbar"]) {
-        self.webViewController.navigationController.navigationBarHidden = [commandDictionary[@"hidden"] boolValue];
- 	}
- }
-
- - (BOOL)respondsToCommandString:(NSString *)commandString {
- 	return [commandString isEqualToString:@"hide_navbar"];
+@implementation HideNavigationBarHandler
+-(void)handleCommandString:(NSString *)commandString dictionary:(NSDictionary *)commandDictionary {
+	if ([commandString isEqualToString:@"hide_navbar"]) {
+       self.webViewController.navigationController.navigationBarHidden = [commandDictionary[@"hidden"] boolValue];
+	}
 }
- @end
- ```
 
- Register the new command handler to a `HYWebViewController` instance.
+- (BOOL)respondsToCommandString:(NSString *)commandString {
+	return [commandString isEqualToString:@"hide_navbar"];
+}
+@end
+```
 
- ```Objective-C
- [webViewController registerCommandHandler:[HideNavigationBarHandler new]];
- ```
+Register the new command handler to a `HYWebViewController` instance.
 
- Invoke it using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS).
+```Objective-C
+[webViewController registerCommandHandler:[HideNavigationBarHandler new]];
+```
 
- ```JavaScript
+Invoke it using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS).
+
+```JavaScript
 HybridKit.runCommand("hide_navbar", {hidden: true});
 ```
 
