@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "HybridKit"
   s.version      = "0.0.1"
-  s.summary      = "HybridKit is a pseudo web ~ iOS / Android bridge bundle. HybridKit for iOS is the iOS counterpart of HybridKit."
+  s.summary      = "iOS version of HybridKit, a pseudo Web <-> iOS/Android bridge."
   s.homepage     = "http://www.github.com/usepropeller/HybridKit-iOS"
   s.author       = { "Mert Dumenci" => "mert@dumenci.me", "Clay Allsopp" => "clay@usepropeller.com"}
 
