@@ -1,0 +1,22 @@
+PODS:
+  - BlocksKit (1.8.2):
+    - libffi
+  - HexColors (2.0.0)
+  - libffi (3.0.13)
+  - SVProgressHUD (0.9)
+  - TransitionKit (1.1.1)
+
+DEPENDENCIES:
+  - BlocksKit
+  - HexColors
+  - SVProgressHUD
+  - TransitionKit
+
+SPEC CHECKSUMS:
+  BlocksKit: 7396526b0816734103f6133fbb1a520c8b04e80c
+  HexColors: 24cee4b04d7b2b0922b93a3acf7739a25ae227e7
+  libffi: 64ef39353e747bb2b25e1026afd96a157bf9231c
+  SVProgressHUD: 03d4845ec8e64591726428a08236c6a5489d45f8
+  TransitionKit: 3b3836af6887d16a0834fa35031028792d1d5c0c
+
+COCOAPODS: 0.22.1

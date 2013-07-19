@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HYWebViewController.h"
 
-@interface HYViewController : UIViewController
+@interface HYViewController : HYWebViewController <HYWebViewControllerDelegate>
 
 @end

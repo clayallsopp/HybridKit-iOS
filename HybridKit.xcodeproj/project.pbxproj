@@ -16,11 +16,17 @@
 		4152F612179854430069A0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4152F610179854430069A0E5 /* Main.storyboard */; };
 		4152F615179854430069A0E5 /* HYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152F614179854430069A0E5 /* HYViewController.m */; };
 		4152F617179854430069A0E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4152F616179854430069A0E5 /* Images.xcassets */; };
-		4152F61E179854430069A0E5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152F61D179854430069A0E5 /* XCTest.framework */; };
 		4152F61F179854430069A0E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152F5FE179854430069A0E5 /* Foundation.framework */; };
 		4152F620179854430069A0E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152F602179854430069A0E5 /* UIKit.framework */; };
 		4152F628179854430069A0E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4152F626179854430069A0E5 /* InfoPlist.strings */; };
 		4152F62A179854430069A0E5 /* HybridKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152F629179854430069A0E5 /* HybridKitTests.m */; };
+		4152F64A179854910069A0E5 /* HYDefaultCommandHandlerPack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152F642179854910069A0E5 /* HYDefaultCommandHandlerPack.m */; };
+		4152F64B179854910069A0E5 /* HYWebViewCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152F644179854910069A0E5 /* HYWebViewCommand.m */; };
+		4152F64C179854910069A0E5 /* HYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152F647179854910069A0E5 /* HYWebViewController.m */; };
+		4152F64D179854910069A0E5 /* NSString+HybridKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152F649179854910069A0E5 /* NSString+HybridKit.m */; };
+		4152F65C17985F980069A0E5 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 4152F65B17985F980069A0E5 /* test.html */; };
+		4152F66C17988B100069A0E5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152F61D179854430069A0E5 /* XCTest.framework */; };
+		D8FB7670B728473CA4FE6053 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2DF7529C5B41F7A429BD3B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2DF7529C5B41F7A429BD3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4152F5FB179854430069A0E5 /* HybridKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4152F5FE179854430069A0E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4152F600179854430069A0E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +60,18 @@
 		4152F625179854430069A0E5 /* HybridKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HybridKitTests-Info.plist"; sourceTree = "<group>"; };
 		4152F627179854430069A0E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4152F629179854430069A0E5 /* HybridKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridKitTests.m; sourceTree = "<group>"; };
+		4152F641179854910069A0E5 /* HYDefaultCommandHandlerPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYDefaultCommandHandlerPack.h; path = HybridKit/HYDefaultCommandHandlerPack.h; sourceTree = "<group>"; };
+		4152F642179854910069A0E5 /* HYDefaultCommandHandlerPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYDefaultCommandHandlerPack.m; path = HybridKit/HYDefaultCommandHandlerPack.m; sourceTree = "<group>"; };
+		4152F643179854910069A0E5 /* HYWebViewCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYWebViewCommand.h; path = HybridKit/HYWebViewCommand.h; sourceTree = "<group>"; };
+		4152F644179854910069A0E5 /* HYWebViewCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYWebViewCommand.m; path = HybridKit/HYWebViewCommand.m; sourceTree = "<group>"; };
+		4152F645179854910069A0E5 /* HYWebViewCommandProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYWebViewCommandProtocol.h; path = HybridKit/HYWebViewCommandProtocol.h; sourceTree = "<group>"; };
+		4152F646179854910069A0E5 /* HYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYWebViewController.h; path = HybridKit/HYWebViewController.h; sourceTree = "<group>"; };
+		4152F647179854910069A0E5 /* HYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYWebViewController.m; path = HybridKit/HYWebViewController.m; sourceTree = "<group>"; };
+		4152F648179854910069A0E5 /* NSString+HybridKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HybridKit.h"; path = "HybridKit/NSString+HybridKit.h"; sourceTree = "<group>"; };
+		4152F649179854910069A0E5 /* NSString+HybridKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HybridKit.m"; path = "HybridKit/NSString+HybridKit.m"; sourceTree = "<group>"; };
+		4152F65B17985F980069A0E5 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		4152F65D179874BB0069A0E5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9193048A40194FDA8736936D /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +82,7 @@
 				4152F601179854430069A0E5 /* CoreGraphics.framework in Frameworks */,
 				4152F603179854430069A0E5 /* UIKit.framework in Frameworks */,
 				4152F5FF179854430069A0E5 /* Foundation.framework in Frameworks */,
+				D8FB7670B728473CA4FE6053 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4152F61E179854430069A0E5 /* XCTest.framework in Frameworks */,
+				4152F66C17988B100069A0E5 /* XCTest.framework in Frameworks */,
 				4152F620179854430069A0E5 /* UIKit.framework in Frameworks */,
 				4152F61F179854430069A0E5 /* Foundation.framework in Frameworks */,
 			);
@@ -86,6 +106,7 @@
 				4152F623179854430069A0E5 /* HybridKitTests */,
 				4152F5FD179854430069A0E5 /* Frameworks */,
 				4152F5FC179854430069A0E5 /* Products */,
+				9193048A40194FDA8736936D /* Pods/Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +122,12 @@
 		4152F5FD179854430069A0E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4152F65D179874BB0069A0E5 /* SenTestingKit.framework */,
 				4152F5FE179854430069A0E5 /* Foundation.framework */,
 				4152F600179854430069A0E5 /* CoreGraphics.framework */,
 				4152F602179854430069A0E5 /* UIKit.framework */,
 				4152F61D179854430069A0E5 /* XCTest.framework */,
+				3D2DF7529C5B41F7A429BD3B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +141,7 @@
 				4152F613179854430069A0E5 /* HYViewController.h */,
 				4152F614179854430069A0E5 /* HYViewController.m */,
 				4152F616179854430069A0E5 /* Images.xcassets */,
+				4152F6401798546F0069A0E5 /* HybridKit */,
 				4152F605179854430069A0E5 /* Supporting Files */,
 			);
 			path = HybridKit;
@@ -126,6 +150,7 @@
 		4152F605179854430069A0E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4152F65B17985F980069A0E5 /* test.html */,
 				4152F606179854430069A0E5 /* HybridKit-Info.plist */,
 				4152F607179854430069A0E5 /* InfoPlist.strings */,
 				4152F60A179854430069A0E5 /* main.m */,
@@ -152,6 +177,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4152F6401798546F0069A0E5 /* HybridKit */ = {
+			isa = PBXGroup;
+			children = (
+				4152F646179854910069A0E5 /* HYWebViewController.h */,
+				4152F647179854910069A0E5 /* HYWebViewController.m */,
+				4152F648179854910069A0E5 /* NSString+HybridKit.h */,
+				4152F649179854910069A0E5 /* NSString+HybridKit.m */,
+				4152F64E179854F70069A0E5 /* Command Handler */,
+			);
+			name = HybridKit;
+			sourceTree = "<group>";
+		};
+		4152F64E179854F70069A0E5 /* Command Handler */ = {
+			isa = PBXGroup;
+			children = (
+				4152F641179854910069A0E5 /* HYDefaultCommandHandlerPack.h */,
+				4152F642179854910069A0E5 /* HYDefaultCommandHandlerPack.m */,
+				4152F643179854910069A0E5 /* HYWebViewCommand.h */,
+				4152F644179854910069A0E5 /* HYWebViewCommand.m */,
+				4152F645179854910069A0E5 /* HYWebViewCommandProtocol.h */,
+			);
+			name = "Command Handler";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4152F62D179854430069A0E5 /* Build configuration list for PBXNativeTarget "HybridKit" */;
 			buildPhases = (
+				530250DD145847EAAB3B12AD /* Check Pods Manifest.lock */,
 				4152F5F7179854430069A0E5 /* Sources */,
 				4152F5F8179854430069A0E5 /* Frameworks */,
 				4152F5F9179854430069A0E5 /* Resources */,
+				25816E6B3F274CE6A26829FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4152F65C17985F980069A0E5 /* test.html in Resources */,
 				4152F617179854430069A0E5 /* Images.xcassets in Resources */,
 				4152F609179854430069A0E5 /* InfoPlist.strings in Resources */,
 				4152F612179854430069A0E5 /* Main.storyboard in Resources */,
@@ -245,13 +297,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25816E6B3F274CE6A26829FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		530250DD145847EAAB3B12AD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4152F5F7179854430069A0E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4152F615179854430069A0E5 /* HYViewController.m in Sources */,
+				4152F64D179854910069A0E5 /* NSString+HybridKit.m in Sources */,
+				4152F64B179854910069A0E5 /* HYWebViewCommand.m in Sources */,
 				4152F60B179854430069A0E5 /* main.m in Sources */,
+				4152F64A179854910069A0E5 /* HYDefaultCommandHandlerPack.m in Sources */,
+				4152F64C179854910069A0E5 /* HYWebViewController.m in Sources */,
 				4152F60F179854430069A0E5 /* HYAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,12 +461,14 @@
 		};
 		4152F62E179854430069A0E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9193048A40194FDA8736936D /* Pods/Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HybridKit/HybridKit-Prefix.pch";
 				INFOPLIST_FILE = "HybridKit/HybridKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -385,12 +476,14 @@
 		};
 		4152F62F179854430069A0E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9193048A40194FDA8736936D /* Pods/Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HybridKit/HybridKit-Prefix.pch";
 				INFOPLIST_FILE = "HybridKit/HybridKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,6 +491,7 @@
 		};
 		4152F631179854430069A0E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9193048A40194FDA8736936D /* Pods/Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HybridKit.app/HybridKit";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -420,6 +514,7 @@
 		};
 		4152F632179854430069A0E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9193048A40194FDA8736936D /* Pods/Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HybridKit.app/HybridKit";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -455,6 +550,7 @@
 				4152F62F179854430069A0E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4152F630179854430069A0E5 /* Build configuration list for PBXNativeTarget "HybridKitTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +559,7 @@
 				4152F632179854430069A0E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

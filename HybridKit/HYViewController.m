@@ -17,13 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *testHTMLPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
+    NSString *HTMLString = [NSString stringWithContentsOfFile:testHTMLPath encoding:NSUTF8StringEncoding error:nil];
+
+    self.htmlString = HTMLString;
+    self.delegate = self;
+    
+    self.webView.scrollView.scrollIndicatorInsets = self.webView.scrollView.contentInset = UIEdgeInsetsMake(66, 0, 0, 0);
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
