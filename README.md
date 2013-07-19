@@ -102,4 +102,4 @@ HybridKit.runCommand("hide_navbar", {hidden: true});
 
 ## License
 
-HybridKit for iOS is available under the MIT license. See the [LICENSE](LICENSE.md) file for more info.
+HybridKit for iOS is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
