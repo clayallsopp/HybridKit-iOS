@@ -8,7 +8,7 @@
 
 HybridKit is a simple, extensible messaging system for your web/native hybrid mobile apps.
 
-Using our [JavaScript library](http://github.com/usepropeller/HybridKit-JS), you can send commands from your web page to the native app for processing.
+Using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS), you can send commands from your web page to your native app for processing.
 
 HybridKit uses **command handlers** for handling commands sent using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS). HybridKit ships with [useful defaults](#builtin), or you can write completely new ones.
 
