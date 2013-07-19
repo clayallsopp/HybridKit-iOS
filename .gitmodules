@@ -1,0 +1,3 @@
+[submodule "HybridKit/HybridKit-JS"]
+	path = HybridKit/HybridKit-JS
+	url = https://github.com/usepropeller/HybridKit-JS.git
