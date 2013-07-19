@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    NSString *testHTMLPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
+    NSString *testHTMLPath = [[NSBundle mainBundle] pathForResource:@"test_html" ofType:@"html"];
     NSString *HTMLString = [NSString stringWithContentsOfFile:testHTMLPath encoding:NSUTF8StringEncoding error:nil];
 
     self.htmlString = HTMLString;
