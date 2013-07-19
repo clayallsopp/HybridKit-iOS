@@ -136,7 +136,7 @@
     if (_htmlString != htmlString) {
         _htmlString = htmlString;
         
-        [self.webView loadHTMLString:_htmlString baseURL:nil];
+        [self.webView loadHTMLString:_htmlString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
     }
 }
 
