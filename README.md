@@ -4,7 +4,7 @@
 
 ![Screenshot](http://i.imgur.com/K86x7V1l.png)
 
-# What is it?
+## What is it?
 
 HybridKit is a simple, extensible messaging system for your web/native hybrid mobile apps.
 
@@ -12,7 +12,7 @@ Using our [JavaScript library](http://github.com/usepropeller/HybridKit-JS), you
 
 HybridKit uses **command handlers** for handling commands sent using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS). HybridKit ships with [useful defaults](#builtin), or you can write completely new ones.
 
-# Setup
+## Installation
 
 HybridKit for iOS requires [CocoaPods](http://cocoapods.org/). Add it to your `Podfile`:
 
@@ -22,7 +22,7 @@ pod 'HybridKit'
 
 Run `pod install` and you're off!
 
-# Usage
+## Usage
 
 You can utilize HybridKit by using  `HYWebViewController` instead of  `UIWebViewController`. `HYWebViewController` will  be ready to catch commands by registering the default command handlers automatically.
 
@@ -39,7 +39,7 @@ webViewController.url = [NSURL URLWithString:@"http://google.com"];
 ```
 
 <a name="builtin" />
-## Built-in Commands
+### Built-in Commands
 
 By default, HybridKit includes the following commands:
 
@@ -56,7 +56,7 @@ By default, HybridKit includes the following commands:
 
 For more information about the built-in handlers, check the [HybridKit-JS Wiki](https://github.com/usepropeller/HybridKit-iOS/wiki).
 
-## Custom Command Handlers
+### Custom Command Handlers
 
 You can create new command handlers for custom commands invoked using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS) easily.
 
@@ -92,10 +92,14 @@ Invoke your new command using the [JavaScript library](http://github.com/useprop
 HybridKit.runCommand("hide_navbar", {hidden: true});
 ```
 
-# Contact
+## Contact
 
 [Mert Dümenci](http://dumenci.me/)
 [@mertdumenci](https://twitter.com/mertdumenci)
 
 [Clay Allsopp](http://clayallsopp.com/)
 [@clayallsopp](https://twitter.com/clayallsopp)
+
+## License
+
+HybridKit for iOS is available under the MIT license. See the [LICENSE](LICENSE.md) file for more info.
