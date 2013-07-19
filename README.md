@@ -1,6 +1,6 @@
 # HybridKit for iOS
 
-**HybridKit is a pseudo web ~ iOS / Android bridge bundle.** HybridKit for iOS is the iOS counterpart of HybridKit.
+**iOS version of HybridKit, a pseudo Web <-> iOS/Android bridge.**
 
 ![Screenshot](http://i.imgur.com/K86x7V1l.png)
 
