@@ -1,14 +1,10 @@
 # HybridKit for iOS
 
-**iOS version of HybridKit, a pseudo Web -> iOS/Android bridge.**
-
-![Screenshot](http://i.imgur.com/K86x7V1l.png)
-
-## What is it?
-
 HybridKit is a simple, extensible messaging system for your web/native hybrid mobile apps.
 
-Using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS), you can send commands from your web page to your native app for processing.
+Using [HybridKit for JavaScript](http://github.com/usepropeller/HybridKit-JS), you can send commands from your web page to your native app for processing.
+
+![Screenshot](http://i.imgur.com/K86x7V1l.png)
 
 HybridKit uses **command handlers** for handling commands sent using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS). HybridKit ships with [useful defaults](#builtin), or you can write completely new ones.
 
@@ -41,20 +37,9 @@ webViewController.url = [NSURL URLWithString:@"http://google.com"];
 <a name="builtin" />
 ### Built-in Commands
 
-By default, HybridKit includes the following commands:
+By default, HybridKit includes the following commands: `alert`, `open_url`, `set_url`, `set_url_refresh`, `set_title`, `set_scroll_enabled`, `set_background_color`, `deceleration_rate`, `trigger_event`, and `javascript`.
 
-- `alert`
-- `open_url`
-- `set_url`
-- `set_url_refresh`
-- `set_title`
-- `set_scroll_enabled`
-- `set_background_color`
-- `deceleration_rate`
-- `trigger_event`
-- `javascript`
-
-For more information about the built-in handlers, check the [HybridKit-JS Wiki](https://github.com/usepropeller/HybridKit-iOS/wiki).
+For more information about the built-in handlers, check the [HybridKit-JS Wiki](https://github.com/usepropeller/HybridKit-JS/wiki/Built-In-Commands).
 
 ### Custom Command Handlers
 
