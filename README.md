@@ -37,18 +37,7 @@ webViewController.url = [NSURL URLWithString:@"http://google.com"];
 <a name="builtin" />
 ### Built-in Commands
 
-By default, HybridKit includes the following commands:
-
-- `alert`
-- `open_url`
-- `set_url`
-- `set_url_refresh`
-- `set_title`
-- `set_scroll_enabled`
-- `set_background_color`
-- `deceleration_rate`
-- `trigger_event`
-- `javascript`
+By default, HybridKit includes the following commands: `alert`, `open_url`, `set_url`, `set_url_refresh`, `set_title`, `set_scroll_enabled`, `set_background_color`, `deceleration_rate`, `trigger_event`, and `javascript`.
 
 For more information about the built-in handlers, check the [HybridKit-JS Wiki](https://github.com/usepropeller/HybridKit-JS/wiki/Built-In-Commands).
 
