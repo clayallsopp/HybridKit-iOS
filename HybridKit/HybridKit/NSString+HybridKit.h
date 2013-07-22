@@ -18,4 +18,6 @@
 - (UIColor *)hy_colorValue;
 - (BOOL)hy_isValidHexColor;
 
+- (NSString *)fromUnderscoreToCamelCase;
+
 @end

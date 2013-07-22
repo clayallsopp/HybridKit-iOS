@@ -76,4 +76,20 @@
     return isValidHex;
 }
 
+- (NSString *)fromUnderscoreToCamelCase {
+    NSArray *parts = [self componentsSeparatedByString:@"_"];
+    NSMutableString *builder = [NSMutableString string];
+    BOOL shouldUpperCase = NO;
+    for (NSString *part in parts) {
+        NSString *first = [part substringToIndex:1];
+        NSString *rest = [part substringFromIndex:1];
+        if (shouldUpperCase) {
+            first = [first uppercaseString];
+        }
+        [builder appendFormat:@"%@%@", first, rest];
+        shouldUpperCase = YES;
+    }
+    return builder;
+}
+
 @end
