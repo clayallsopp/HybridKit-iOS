@@ -74,11 +74,15 @@
     */
     
     NSArray *commandURLComponents = [url.absoluteString componentsSeparatedByString:@"command:"];
-    NSString *encodedJSON = commandURLComponents[commandURLComponents.count - 1];
+    NSString *encodedJSON = commandURLComponents.lastObject;
     NSString *unencodedJSON = [encodedJSON hy_realUnescaped];
 
-    NSError *error;
+    NSError *error = nil;
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[unencodedJSON dataUsingEncoding:NSUTF8StringEncoding] options:0 error:&error];
+
+    if (error) {
+        [NSException raise:error.localizedDescription format:@"%@",error.localizedFailureReason];
+    }
 
     return dict.mutableCopy;
 }
@@ -259,7 +263,6 @@
         [self.stateMachine fireEvent:@"finish_load" error:nil];
         return NO;
     }
-
     else if ([scheme isEqualToString:@"command"]) {
         NSDictionary *commandDictionary = [self commandURLToJSON:request.URL].copy;
         [self runJSONCommand:commandDictionary];
