@@ -167,5 +167,9 @@ void hy_wait(int wait_time, WaitBlock block) {
     XCTAssertEquals(self.webViewController.webView.scrollView.decelerationRate, UIScrollViewDecelerationRateNormal);
 }
 
+- (void)testMalformedJSON {
+    XCTAssertThrows([self.webViewController commandURLToJSON:[NSURL URLWithString:@"%7B%22command%22hello"]].copy);
+}
+
 
 @end
