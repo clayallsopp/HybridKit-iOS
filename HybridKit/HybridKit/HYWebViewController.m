@@ -264,13 +264,8 @@
         return NO;
     }
     else if ([scheme isEqualToString:@"command"]) {
-        @try {
-            NSDictionary *commandDictionary = [self commandURLToJSON:request.URL].copy;
-            [self runJSONCommand:commandDictionary];
-        }
-        @catch (NSException *exception) {
-            NSLog(@"%@", exception.reason);
-        }
+        NSDictionary *commandDictionary = [self commandURLToJSON:request.URL].copy;
+        [self runJSONCommand:commandDictionary];
         return NO;
     }
 
