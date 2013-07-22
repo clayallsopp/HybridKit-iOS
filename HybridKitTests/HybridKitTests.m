@@ -168,7 +168,8 @@ void hy_wait(int wait_time, WaitBlock block) {
 }
 
 - (void)testMalformedJSON {
-    XCTAssertThrows([self.webViewController commandURLToJSON:[NSURL URLWithString:@"%7B%22command%22hello"]].copy);
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"command:hello"]];
+    XCTAssertThrows([self.webViewController webView:self.webViewController.webView shouldStartLoadWithRequest:request navigationType:UIWebViewNavigationTypeOther]);
 }
 
 

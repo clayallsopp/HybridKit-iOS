@@ -81,7 +81,7 @@
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[unencodedJSON dataUsingEncoding:NSUTF8StringEncoding] options:0 error:&error];
 
     if (error) {
-        [NSException raise:error.localizedDescription format:@"%@",error.localizedFailureReason];
+        [NSException raise:error.localizedDescription format:@"%@", error.localizedFailureReason];
     }
 
     return dict.mutableCopy;
