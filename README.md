@@ -20,7 +20,7 @@ Run `pod install` and you're off!
 
 ## Usage
 
-You can utilize HybridKit by using  `HYWebViewController` instead of  `UIWebViewController`. `HYWebViewController` will  be ready to catch commands by registering the default command handlers automatically.
+You can utilize HybridKit by using  `HYWebViewController` instead of `UIViewController`. `HYWebViewController` will be ready to catch commands by registering the default command handlers automatically.
 
 Setup `HYWebViewController` and load a URL.
 ```Objective-C
