@@ -9,13 +9,13 @@
 #import "HYDefaultCommandHandlerPack.h"
 #import "NSString+HybridKit.h"
 
-#import <BlocksKit/BlocksKit.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
 
 @implementation HYDefaultCommandHandlerPack
 -(void)handleCommandString:(NSString *)commandString dictionary:(NSDictionary *)commandDictionary {
     if ([commandString isEqualToString:@"alert"]) {
-        UIAlertView *alertView = [UIAlertView alertViewWithTitle:commandDictionary[@"title"] message:commandDictionary[@"message"]];
-        [alertView setCancelButtonWithTitle:commandDictionary[@"cancel_button_title"] ? commandDictionary[@"cancel_button_title"] : @"OK" handler:nil];
+        UIAlertView *alertView = [UIAlertView bk_alertViewWithTitle:commandDictionary[@"title"] message:commandDictionary[@"message"]];
+        [alertView bk_setCancelButtonWithTitle:commandDictionary[@"cancel_button_title"] ? commandDictionary[@"cancel_button_title"] : @"OK" handler:nil];
         [alertView show];
     }
 
@@ -56,7 +56,7 @@
     }
 
     else if ([commandString isEqualToString:@"trigger_event"]) {
-        [self.webViewController.stateMachine fireEvent:commandDictionary[@"event"] error:nil];
+        [self.webViewController.stateMachine fireEvent:commandDictionary[@"event"] userInfo:nil error:nil];
     }
 
     else if ([commandString isEqualToString:@"javascript"]) {

@@ -152,7 +152,7 @@ void hy_wait(int wait_time, WaitBlock block) {
 }
 
 - (void)testTriggerEvent {
-    [self.webViewController.stateMachine fireEvent:@"start_load" error:nil];
+    [self.webViewController.stateMachine fireEvent:@"start_load" userInfo:nil error:nil];
     
     NSDictionary *JSON = @{@"command" : @"trigger_event", @"event" : @"load_error"};
     [self.webViewController runJSONCommand:JSON];
@@ -163,8 +163,8 @@ void hy_wait(int wait_time, WaitBlock block) {
 - (void)testDecelerationRate {
     NSDictionary *JSON = @{@"command" : @"deceleration_rate", @"rate" : @"normal"};
     [self.webViewController runJSONCommand:JSON];
-    
-    XCTAssertEquals(self.webViewController.webView.scrollView.decelerationRate, UIScrollViewDecelerationRateNormal);
+
+    XCTAssertEqual(self.webViewController.webView.scrollView.decelerationRate, UIScrollViewDecelerationRateNormal);
 }
 
 - (void)testMalformedJSON {

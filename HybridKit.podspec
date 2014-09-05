@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HybridKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "iOS version of HybridKit, a pseudo Web <-> iOS/Android bridge."
   s.homepage     = "http://www.github.com/usepropeller/HybridKit-iOS"
   s.author       = { "Mert Dumenci" => "mert@dumenci.me", "Clay Allsopp" => "clay@usepropeller.com"}
@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.license = {:type => 'MIT', :file => 'LICENSE'}
 
-  s.dependency 'SVProgressHUD'
-  s.dependency 'HexColors'
-  s.dependency 'TransitionKit'
-  s.dependency 'BlocksKit'
+  s.dependency 'SVProgressHUD', '~> 1.0'
+  s.dependency 'HexColors', '~> 2.0'
+  s.dependency 'TransitionKit', '~> 1.1'
+  s.dependency 'BlocksKit', '~> 2.2'
 end

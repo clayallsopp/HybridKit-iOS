@@ -81,7 +81,7 @@
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[unencodedJSON dataUsingEncoding:NSUTF8StringEncoding] options:0 error:&error];
 
     if (error) {
-        [NSException raise:error.localizedDescription format:@"%@", error.localizedFailureReason];
+        [NSException raise:error.localizedDescription format:@"%@",error.localizedFailureReason];
     }
 
     return dict.mutableCopy;
@@ -171,7 +171,7 @@
         TKState *setup = [TKState stateWithName:@"setup"];
         TKState *loading = [TKState stateWithName:@"loading"];
 
-        [loading setDidEnterStateBlock:^(TKState *state, TKStateMachine *stateMachine) {
+        [loading setDidEnterStateBlock:^(TKState *state, TKTransition *transition) {
             if (!self.hasLoadedURL) {
                 self.webView.hidden = YES;
                 self.webView.scrollView.scrollEnabled = NO;
@@ -179,14 +179,14 @@
             }
         }];
 
-        [loading setDidExitStateBlock:^(TKState *state, TKStateMachine *stateMachine) {
+        [loading setDidExitStateBlock:^(TKState *state, TKTransition *transition) {
             self.navigationItem.rightBarButtonItem = nil;
             self.activityIndicator.hidden = YES;
         }];
 
 
         TKState *error = [TKState stateWithName:@"error"];
-        [error setDidEnterStateBlock:^(TKState *state, TKStateMachine *stateMachine) {
+        [error setDidEnterStateBlock:^(TKState *state, TKTransition *transition) {
             self.webView.hidden = YES;
 
             [SVProgressHUD showErrorWithStatus:@"Error :("];
@@ -195,12 +195,12 @@
             }
         }];
 
-        [error setDidExitStateBlock:^(TKState *state, TKStateMachine *stateMachine) {
+        [error setDidExitStateBlock:^(TKState *state, TKTransition *transition) {
             self.navigationItem.rightBarButtonItem = nil;
         }];
 
         TKState *success = [TKState stateWithName:@"success"];
-        [success setDidEnterStateBlock:^(TKState *state, TKStateMachine *stateMachine) {
+        [success setDidEnterStateBlock:^(TKState *state, TKTransition *transition) {
 
             self.hasLoadedURL = NO;
             self.webView.hidden = NO;
@@ -260,7 +260,7 @@
     NSString *scheme = request.URL.scheme;
 
     if ([scheme isEqualToString:@"domready"]) {
-        [self.stateMachine fireEvent:@"finish_load" error:nil];
+        [self.stateMachine fireEvent:@"finish_load" userInfo:nil error:nil];
         return NO;
     }
     else if ([scheme isEqualToString:@"command"]) {
@@ -273,18 +273,18 @@
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-    [self.stateMachine fireEvent:@"start_load" error:nil];
+    [self.stateMachine fireEvent:@"start_load" userInfo:nil error:nil];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     if ([self.url.absoluteString rangeOfString:@"dom_event"].location == NSNotFound || !self.url.absoluteString) {
-        [self.stateMachine fireEvent:@"finish_load" error:nil];
+        [self.stateMachine fireEvent:@"finish_load" userInfo:nil error:nil];
     }
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     if (error.code == NSURLErrorCancelled) return;
-    [self.stateMachine fireEvent:@"load_error" error:nil];
+    [self.stateMachine fireEvent:@"load_error" userInfo:nil error:nil];
 }
 
 @end
