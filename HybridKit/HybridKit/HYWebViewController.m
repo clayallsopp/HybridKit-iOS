@@ -150,6 +150,7 @@
         _activityIndicator.center = self.view.center;
         _activityIndicator.translatesAutoresizingMaskIntoConstraints = NO;
         [_activityIndicator startAnimating];
+        _activityIndicator.hidden = YES;
 
         [self.view addSubview:_activityIndicator];
 
@@ -202,7 +203,7 @@
         TKState *success = [TKState stateWithName:@"success"];
         [success setDidEnterStateBlock:^(TKState *state, TKTransition *transition) {
 
-            self.hasLoadedURL = NO;
+            self.hasLoadedURL = YES;
             self.webView.hidden = NO;
             self.webView.scrollView.scrollEnabled = YES;
         }];
