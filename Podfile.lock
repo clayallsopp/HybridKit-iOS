@@ -19,10 +19,10 @@ PODS:
   - TransitionKit (2.1.0)
 
 DEPENDENCIES:
-  - BlocksKit
-  - HexColors
-  - SVProgressHUD
-  - TransitionKit
+  - BlocksKit (~> 2.2)
+  - HexColors (~> 2.0)
+  - SVProgressHUD (~> 1.0)
+  - TransitionKit (~> 2.1)
 
 SPEC CHECKSUMS:
   BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
